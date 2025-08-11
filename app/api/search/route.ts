@@ -8,7 +8,7 @@ export const runtime = "edge";
 export const preferredRegion = ["fra1","cdg1","iad1"];
 
 const APIFY_TOKEN = process.env.APIFY_TOKEN;
-const INSTAGRAM_PROFILES = ["https://www.instagram.com/eurohoops_turkiye/", "https://www.instagram.com/eurohoops_official/", "https://www.instagram.com/basketnews/", "https://www.instagram.com/sportando/", "https://www.instagram.com/sdnagr/", "https://www.instagram.com/mozzartsport/", "https://www.instagram.com/sport.klub/", "https://www.instagram.com/be_basket/", "https://www.instagram.com/novasportsgr/", "https://www.instagram.com/gazzetta.gr/", "https://www.instagram.com/mundodeportivo/", "https://www.instagram.com/totalbasketgr/", "https://www.instagram.com/gigantesdelbasket/", "https://www.instagram.com/basketusa/", "https://www.instagram.com/sporx/", "https://www.instagram.com/basketinside/", "https://www.instagram.com/maxbetsport/", "https://www.instagram.com/sport24/", "https://www.instagram.com/basquetplus/", "https://www.instagram.com/basketballsphere.rs/"];
+const INSTAGRAM_PROFILES = ["https://www.instagram.com/gigantesdelbasket/", "https://www.instagram.com/basketusa/", "https://www.instagram.com/sporx/", "https://www.instagram.com/basketinside/", "https://www.instagram.com/maxbetsport/", "https://www.instagram.com/sport24/", "https://www.instagram.com/basquetplus/", "https://www.instagram.com/basketballsphere.rs/"];
 
 async function fetchInstagramPostsSince(sinceISO: string): Promise<RawPost[]> {
   if (!APIFY_TOKEN) throw new Error("APIFY_TOKEN is missing");
